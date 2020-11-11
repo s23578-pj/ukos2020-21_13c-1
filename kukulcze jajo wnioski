@@ -1,0 +1,56 @@
+09.
+wykonując ćwiczenia nauczyłem się:
+Zad 1. 
+Wraz z kolegą Jakubem Styn.
+Poprzez korzystanie z różnych rodzajów operacji (tryb tekstowy, program Midnight Commander (mc)
+ - [przy użyciu graficznego interfejsu użytkownika nie jesteśmy w stanie połączyć się z szuflandią]:
+- nadawać i odbierać uprawnienia folderom i plikom.
+zmieniać 
+sprawdzić różnice między poszczególnymi uprawnieniami:
+- prawo odczytu, (r)
+- prawo zapisu, (w)
+- prawo wykonywania, (x)
+dla plików i folderów.
+
+- łączyć się z serwerem szuflandii za pomocą protokołu ssh oraz przechodzić do katalogów pozostałych osób z grupy. (ssh snumerstudenta@szuflandia.pjwstk.edu.pl)
+
+Zad 2.
+- Usuwając sobie uprawnienia  w katalogu bieżącym pozbawiam się możliwości integracji w tym miejscu. Jednak mogę nadal wyjść z niego za pomocą "cd .."
+-  W przypadku usunięcia sobie uprawnienia w katalogu nadrzędnym pozbawiam się nawet cofnięcia się do niego. W takim wypadku jedynym wyjściem jest uciec ponad nadrzędny.
+W przypadku chmod możemy wykonywać polecenia tylko jeśli w danym katalogu nie odebraliśmy sobie uprawnień do zawartości.
+
+Przykład: ścieżka: home/uprawnienia/test/test_2
+Jeżeli będąc w "test_2" usunę sobie wszystkie prawa do "test_2" oraz "test" to wyjściem będzie cd ~/ścieżka bezwzględna.
+
+Nie mając uprawnień do "test" nie można przejść bezpośrednio z "uprawnienia" do "test_2".
+Zad 3.
+- nauczyłem się wprowadzać treść do plików tekstowych za pomocą komendy echo.
+- ">" zapisuje bądź nadpisuje treść jeśli w pliku były już jakieś treści.
+- ">>" zapisuje dodając treść w kolejnej linii.
+- dzięki komendzie tail -f nazwa_pliku mamy na bieżąco wyświetlane zmiany, które wykonuje inny użytkownik. 
+
+Zad4.
+- stworzyć podstawową stronę html,
+- Minimalne uprawniena dla katalogu domowego jak i public_html aby odpalić stronę to: wejścia i odczytu (rx), gdy dla pliku strona.html to: odczytu (r).
+
+Zad 5.
+- poznałem komendę umask dzieki której mam możliwość zmiany domyślnych uprawnień dla katalogów i plików (ułatwa to pracę podczas tworzenia dużego drzewa). Podstawowy umask wynosi 022.
+- Operacja logiczna wykonywana na domyślnych prawach dostępu oraz maski wygląda następująco:
+	Od domyśłnych ustawień praw dostępu odejmuje wartość umask.
+Przykład 1:
+	wartość umask wynosi: 777 
+	działanie: tworząc katalog "kat1" następuje operacja odjęcia podstawowych uprawnień katalogu od umask, czyli:
+	777
+       -777
+	===
+	000
+	Wynik: Utworzony katalog przyjmie uprawnienia równe: 000.
+Przykład 2
+	wartość umask wynosi: 000
+	działanie: tworząc katalog "kat1" następuje operacja odjęcia podstawowych uprawnień katalogu od umask, czyli:
+	777
+       -000
+	===
+	777
+	Wynik: Utworzony katalog przyjmie uprawnienia równe: 777.
+
