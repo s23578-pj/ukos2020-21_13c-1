@@ -1,0 +1,18 @@
+08.11.2020 r.
+Nauczyłem się:
+-wraz z Krzysztofem Szczypior nadawać i odbierać uprawnienia do odczytu (r), zapisu (w) oraz wykonywania (x) plików oraz uprawnienia zapoznania się z zawartością (r), 
+zmiany zawartości oraz wejścia do katalogów za pomocą różnych operacji (tryb tekstowy, Midnight Commander oraz interfejs graficzny użytkownika)
+-łączyć się z serwerem szuflandii i "wchodzić" do katalagów pozostałych osób z grupy
+-usuwając sobie uprawnienia w katalogu bieżącym pozbawiam sie możliwości integracji (bezpośrednio) w katalog mogę jedynie z niego wyjśc do katalogu nadrzędnego albo podrzędnego
+-usuwając sobie uprawnienia w katalogu nadrzednym pozbawiam się możliwości cofnięcia komendą cd .. w takim przypadku jedynym wyjsciem jest uciec w ponad nadrzędny (ściężka bezwględną)
+-że w każdym przypadku (z wyjątkiem odebrania uprawnień katalogowi home) można użyć komendy cd (ale nie w kazdym zadziała poprawnie) a chmod tylko w sytuacji kiedy nie odebraliśmy sobie uprawnień "edycji" katalogu
+-ścieżka bezwględną nie można przejść do katalogu niższego jeżeli nie mamy uprawnień do wejścia do katalogu nadrzędnego
+-wpisywać i odczytywać komunikaty przy uzyciu poleceń echo tresć > plik (oraz >> plik) i cat plik
+-zmiana operator z > na >> powoduje dodanie linijki tekstu do pliku (> powoduje nadpisanie w -przypadku gdy w pliku jest cokolwiek zapisane)
+-komenda tail -f nazwa_pliku powoduje że na bieżąco widzimy zmiany, których dokonuje drugi użytkownik dotyczące owego pliku
+-tworzyć uproszczone strony internetowe html
+-jakie minimalne uprawnienia musi posiadać katalog domowy (wejścia i odczytu), katalog public_html (również wejścia i odczytu) oraz plik strona.html  (wystarczy tylko odczytu)
+-działania komendy umask (możliwość zmiany domyślnych uprawnień dla katalogów i plików-ułatwia to pracę przy tworzeniu dużego drzewa katalogów lub plików)
+-zmieniać maskę trybu pliku poczym tworzyć nowe pliki i sprawdzać uzyskane prawda dostępu do nich
+-jaka operacja logiczna zachodzi na bitach domyślnych uprawnień dostępu oraz maski (od domyślnych ustawień uprawnień dostępu odejmuje wartość umask)
+Jakub Styn
