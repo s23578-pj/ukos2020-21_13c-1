@@ -1,0 +1,17 @@
+-> Prawa dostepu (u-user,g-group,o-other)
+prawo do odzytu r:4
+prawo do zapisu w:2
+prawo do wykonania x:1
+r+w+x = 7
+-> Przy uzyciu polecenia:
+	-echo "tresc" > plik - plik zostaje wyczyszczony i zapisany trescia ponownie.
+	-echo "tresc" >> plik - do pliku dołączana jest następna linia treści.
+	-tail -f plik - pozwala na zapisywanie informacji w czasie rzeczywistym. Mianowicie, pojawia nam sie pole do wpisywania linijek tekstu. Aby wyłączyć -> ctrl+z
+
+-> Zakładając, że mamy takie drzewko katalogów
+	-kat1
+	------------kat2
+	------------kat3 (chmod 000)
+	------------------------kat4 
+	jeżeli znajdujemy się w kat4 to jedynym rozwiązaniem aby wyjść to podać ścieżkę bezwględną
+	jeżeli jesteśmy w kat1, to w żaden sposób nie wejdziemy do kat4 mimo, że mamy do niego dostep
