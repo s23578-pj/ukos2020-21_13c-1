@@ -1,0 +1,10 @@
+nauczlem się :
+- chmod "zmiana uprawnien pliku/katalou"
+- chown "zmiana właściciela pliku"
+- chgrp "zmiana grupy która jest włascicielem pliku/katalogu"
+
+np.:
+- chmod o-r 'nazwa_katalogu'  - "katalog zabiera u  prawnienia odczytu"
+- chmod o+r ... " daje uprawnienia odczytu"
+
+-r(prawo do odczytu), w(prawo do zapisu), x (prawo do wykonywania),
