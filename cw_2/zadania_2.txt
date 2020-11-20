@@ -1,0 +1,12 @@
+1. Mam dostęp do plikow jezeli uprawnienia
+mi na to pozwalaja, na poczatku nie moglem zrobic pliku
+u kolegi, ale po zmianie uprawnien katalogu juz mialem
+taka mozliwosc, przy próbie usuniecia jajka w moim
+folderze, udalo sie.
+2. Moge usunac uprawnienia katalogu biezacego i nadrzednego
+podajac sciezke po uzyciu komendy chmod, majac uprawnienia
+w biezacym katalogu, nie moge przejsc wyzej do nadrzednego
+w ktorym nie mam uprawnien i na przemiennie.
+3. Dziala mozna sie komunikowac, >> pozwala na dodanie tekstu
+a > nadpisuje, 
+4. No nie dziala cos
