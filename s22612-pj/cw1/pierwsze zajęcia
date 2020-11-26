@@ -13,4 +13,4 @@ Przejdź do swojego katalogu domowego za pomocą ścieżki bezwzględnej - cd /h
 Zobacz co się stanie jak wpiszesz komendę 'cd /root'. - brak dostępu 
 Zobacz, co się stanie, jeśli wciśniesz kombinację klawiszy: Ctrl+Alt+F1     - tryb pełnoekranowy
 
-reszta zadań opisana w pamiętniku
+reszta zadań związana z drzewem katalogów jest opisana w "pamietnik.txt"
