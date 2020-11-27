@@ -16,3 +16,6 @@
 - wykonywane zadania znajdują się w moim katalogu domowym,
 - widoczny na szuflandii jest plik strona.html, która posiada odpowiednie prawa dostępu,
 - do następnych ćwiczeń zamierzam przygotować się, poprzez przeczytanie tematu "03 Procesy i strumienie" na szuflandii.
+
+21.11.2020
+Pamiętnik z tego dnia znajduje się w folderze cw3/zajecia3
