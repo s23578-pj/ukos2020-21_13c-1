@@ -1,0 +1,47 @@
+zadania_0
+
+ls -a -> wypisało mi 6 plików
+ls -a | grep D -> nic mi nie wypisało bo nie mam nic na literke D
+ls -a | grep D > ListaPlikowZLiterkaD.txt -> utworzyl sie plik, z tekstem który jest nazwa pliku.
+| -> łączy procesy ze sobą > -> tworzy plik i przekierowuje zawartosc
+
+zadania_1
+
+1. ps -> pokazuje liste programow aktualnie uruchomionych w systemie
+2. ps -a -> pokazuje wszystkie procesy poza shellem
+3. ps x -> pokazuje wszystkie procesy których jestem właścicielem
+4. ps aux -> a-pokazuje procesy wszystkich użytkowników, u-pokazuje procesy użytkownika/właściciela,
+x-pokazuje procesy nie przypisane do terminalu
+
+1. ps -e
+2. ps -U root -u root u
+
+
+zadania_2
+
+kill na "zabicie" notatnika dziala poleceniem kill + PID notatnika, 
+killall shell - nie znaleziono procesu,
+kill nie działa dla dowolnego procesu
+
+zadania_3
+
+1,2. ten skrót ctrl+c wychodzi z programu
+
+1,2,3,4. plik wynik1.txt powstal ale tekst wpisany nie zostal zapisany
+
+1,2,3,4. tekst ładnie sie zapisał :)
+
+zadania_4
+
+1,2,3. po ctrl+z nie moglem w notatniku nic pisac, ale po komendzie bg można było 
+a na dodatek to co wpisywalem podczas niedzialania programu zostalo wpisane.
+
+
+
+
+
+
+
+
+
+
