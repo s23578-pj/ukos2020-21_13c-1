@@ -1,0 +1,15 @@
+24.11.
+Przerabiając materiał z zjazdu 3:
+
+- Poznałem komende grep, która służy do wyszukiwania nazwy pliku pasującego do wzorca,
+-  znaczenie "|"(potok) ">" ">>" "2>>" "A|B" "A<B"
+- Polecenia grep (filtracji wierszy),
+- Poznałem komende ps z parametrami (-a, x, aux) służącymi do wyświetlenia listy procesów .
+- wyświetlać wszystkie procesy z danego typu/gatunku (np bash, root, txt, etc)
+- sprawdzać jaki PID ma dany proces,
+- komendy kill i jej zastosowania
+- komenda kill nie zawsze zadziała (np w przypadku gdy chcemy usunąc proces należącego do root  będąc - zwykłym użytkownikiem - chodzi o uprawnienia..)
+-- różnice między Ctrl+C a Ctrl+D (zakończenie procesu a wstrzymanie (zakończenie strumienia)
+- Znak zapytania "?" oznacza nie przypisanie konkretnego procesu do konkretnej powłoki/terminala (TTY)
+- użycie komend bg (przełączenie programu w tle) /fg (powrócenie, wznowienie procesu)
+- 
