@@ -10,7 +10,7 @@ GIT POLECENIA
 - mv "przenoszenie i zmiana nazwy"
 - chmod "zmiana bitów uprawnień"
 - chown "zmaina własciciela i grupy"
-- rm "usuwanie plików i katalogów"
+- rm "usuwanie pełnych katalogów"
 - grep "filtrowanie wierszy"
 - cut "filtrowanie kolumn"
 - cat "drukowanie zawartości plików"
@@ -20,3 +20,26 @@ GIT POLECENIA
 - find "wyszukuje pliki , katalogi"
 - head "drukuje pierwszy N wierszy"
 - tail "drukuje ostatni N wierszy"
+
+- # "hash"
+
+- fortune | cowsay | lolcat "piesek"
+- fortune | cowsay -f ghostbusters
+
+DODAWANIE BITÓW
+- chmod u + x skrypt.sh
+- chmod 777 skrypt.sh "daje całkowity dostep do pliku"
+
+URUCHAMIANIE
+- ./skrypt.sh "tworzy powłoke która uruchamia skrypt"
+- source skrypt.sh "uruchamia powłoke która konfiguruje w jednym pliku"
+- .bashrc i .bash_profile "konfiguracja powłoki"
+
+Terminar
+- echo "hello" "wyświetli w nowej lini hello"
+- echo -n "hello" "wyświetni w tej samej lini hello"
+- echo "hello" && echo "world" "wyświetli sie całość"
+
+VIM
+- :q! "wujscie z terminala vim" bez zapisywania zmian
+- :wq "z zapisywaniem zmiań"
