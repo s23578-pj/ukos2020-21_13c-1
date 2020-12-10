@@ -1,4 +1,5 @@
 "w linuxie wszystko jest plikiem"
+BUSH - Bourne Another Shell
 
 
 GIT:
@@ -10,6 +11,7 @@ GIT:
 - git reset --hard "przywraca poprzedniego brancha"
 - git fetch "zaczytuje stan zewnetrznego repo "
 - git pull "zaciaga wszystkie commity"
+- git remote -vv "sprawdzanie na jaki server sie wysyła"
 GIT ADD:
 - git add . "dodaje wybrane pliki"
 - git add --all - "dodaje wszystko"
@@ -32,6 +34,10 @@ GIT
 - c:\user\nazwa_pliku
 - sudo su "logowanie jako admin"
 - history "pokazuje wszystkie historie poleceń"
+- cd "wyjscie z pliku"
+- pwd "wyświetlenie aktualnego katalogu"
+- ls "wyświetlenie zawartośći katalogu"
+- tree "wyświetlenie list pików i katalogów (drzewo)"nie zawsze działa
 
 
 KATALOGI
@@ -43,3 +49,4 @@ KLAWISZ
 - shift + insert "wkleja sie polecenie skopiowane"
 - ctrl + z "zatrzymuje programy"
 - tab "zapełnia wpisywanie"
+
