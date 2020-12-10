@@ -1,3 +1,6 @@
+"w linuxie wszystko jest plikiem"
+
+
 GIT:
 - git clone "pobiera repo"
 - git status - "przedstawia stan naszego repo."
@@ -21,5 +24,22 @@ GTI CHECKOUT:
 - git checkout -
 - git checkout nazwa_pliku
 
+GIT
+- w linux dajemy "cd/.." zeby dojść do odpowiedniego katalogu a w windows "\" z czego to jest znak specjalny który rodzi pewne problemy bo w programowaniu używany "\\" np
+- echo -e "a\nb"
+- echo -e "a\\nb"
+- cd/... zeby dojść do katlogu
+- c:\user\nazwa_pliku
+- sudo su "logowanie jako admin"
+- history "pokazuje wszystkie historie poleceń"
 
 
+KATALOGI
+- bin znaczna wiekszość polecen np. "ls , echo"
+- boot uruchamianie systemu . np jondro systemowe  , - jondro "podstawowe funkcje systemowe"
+- dev katalog ze wszystkimi urzadzeniami
+
+KLAWISZ
+- shift + insert "wkleja sie polecenie skopiowane"
+- ctrl + z "zatrzymuje programy"
+- tab "zapełnia wpisywanie"
