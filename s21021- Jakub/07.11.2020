@@ -1,10 +1,23 @@
-nauczlem się :
-- chmod "zmiana uprawnien pliku/katalou"
-- chown "zmiana właściciela pliku"
-- chgrp "zmiana grupy która jest włascicielem pliku/katalogu"
+CHMOD
+- chmod u+x nazwa_pliku "dodajemy uprawnienia 'x'"
+- chmod u-x zanwa-pliku "zabieramy uprawnienia 'x'"
+- chmod u=rwx nazwa_pliku "przyiswanie wszustkich 3 bitów 'rwx'"
+- chmod u=r
 
-np.:
-- chmod o-r 'nazwa_katalogu'  - "katalog zabiera u  prawnienia odczytu"
-- chmod o+r ... " daje uprawnienia odczytu"
 
--r(prawo do odczytu), w(prawo do zapisu), x (prawo do wykonywania),
+Jeśli chodzi o pliki:
+- r prawo do odczytu (read)
+- w prawo do zapisu (write)
+- x prawo do wykonywania
+
+W przypadku katalogów
+- r prawo do zapoznania się z zawartościć katalogu
+- w prawo do zmiany zawartości katalogu
+- x prawo do "wejścia" do danego katalogu
+
+- u właściciel (user)
+- g grupa (group)
+- o inni (other)
+
+Katalogi
+- mkdir "nowy katalog"
