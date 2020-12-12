@@ -1,0 +1,16 @@
+Uruchomiłem terminal.
+Wyświetl zawartość aktualnego katalogu - ls
+Sprawdź gdzie aktualnie się znajdujesz - pwd
+Przejdź do katalogu Pulpit za pomocą ścieżki względnej - cd Desktop
+Sprawdź gdzie jesteś -pwd
+Wyświetl zawartość bieżącego katalogu - ls
+Zobacz, czy przechodząc do tego katalogu w sposób graficzny (wyklikać) otrzymamy to samo? - Tak, otrzymamy to samo
+Wyświetl zawartość swojego katalogu domowego bez przechodzenia do niego - ls /home
+Przejdź do katalogu Obrazy w twoim katalogu domowym za pomocą ścieżki względnej - cd ..  a następnie cd Pictures
+Sprawdź gdzie jesteś - pwd
+Zobacz do jakiego katalogu przejdziesz za pomocą ścieżki ././././././   - nigdzie
+Przejdź do swojego katalogu domowego za pomocą ścieżki bezwzględnej - cd /home
+Zobacz co się stanie jak wpiszesz komendę 'cd /root'. - brak dostępu 
+Zobacz, co się stanie, jeśli wciśniesz kombinację klawiszy: Ctrl+Alt+F1     - tryb pełnoekranowy
+
+reszta zadań związana z drzewem katalogów jest opisana w "pamietnik.txt"
