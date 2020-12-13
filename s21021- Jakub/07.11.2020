@@ -2,8 +2,11 @@ CHMOD
 - chmod u+x nazwa_pliku "dodajemy uprawnienia 'x'"
 - chmod u-x zanwa-pliku "zabieramy uprawnienia 'x'"
 - chmod u=rwx nazwa_pliku "przyiswanie wszustkich 3 bitów 'rwx'"
-- chmod u=r
-
+- chmod u=r nazwa_pliku "bedzie sam bit odczytu"
+- chmod u=- nazwa pliku "czyści wszystkie 3 bity"
+- chmod u+r , g-wx , o-rwx nazwa_pliku "przydzielić ustaienia do wszytkich (u - właściciel ,g - grupy , o - inni )"
+- chmod 777 nazwa_pliku "odczyt 9 bitów"
+- chmod 755 nazwa_pliku "ucinamy "
 
 Jeśli chodzi o pliki:
 - r prawo do odczytu (read)
@@ -18,6 +21,8 @@ W przypadku katalogów
 - u właściciel (user)
 - g grupa (group)
 - o inni (other)
+  (u) (g) (o)
+d rwx rwx rwx
 
 Katalogi
 - mkdir "nowy katalog"
