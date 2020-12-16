@@ -15,3 +15,18 @@
 - ls -l / | grep nazwa_katalogu"drukowanie zawartości jakiegoś katalogu"
 - ls -l / | grep nazwa_katalogu | cut - ' ' -f 1-...  "filtrowanie kolumn "
 - ls -l / | grep nazwa_katalogu | wak '{print $liczba}'
+
+- mv ./* nazwa_pliku "nie można przenieść katalodu do jego wnętrza"
+- tar -cf pliki.tar pliki/ "stworzenie katalogu .tar który zawiera wszystkie elementy z poprzednimi plikami"
+- tar -cvf pliki.tar pliki/ "pokazuje jakie konkretnie pliki pamuje do katalogu"
+- tar -cvzf pliki.tar.gz pliki/ "pakuje pliki szybciej" zajmuje to tylko 271 bitów a bez kompresji zajmuje to 10240 bitów
+- tar -cvjf pliki.tar.bz2 pliki/ "bz2 archiwa bedą sie pakowały dłużej ale bedą mniej zajmowały niz gz"
+
+pakowanie bin :
+- tar -cvzf bin.tar.gz /bin/  "plik wiecej waży ale szybciej sie pakuje"
+- tar -cvjf bin.tar.bz2 /bin/ "plik mniej waży ale wolniej sie pakuje"
+
+sciąganie
+- wget www... "pobiera strone internetowa"
+- curl -k https:... > index.html "przekierowanie do pliku zawartości strony"
+- -k "wyłącza sprawdzanie certyfikatu"
