@@ -1,0 +1,45 @@
+GIT POLECENIA
+- man "wyświetlanie pomocy"
+- echo "wpisanie textu"
+- ls "wyświetlanie zawartosci katalogu"
+- cd "zmiana bieżącego katalogu"
+- mkdir "tworzenie katalogu"
+- rmdir "usuwanie pustego katalogu"
+- touch "tworzenie pustego pliku"
+- cp "kopiowanie plików, katalogów"
+- mv "przenoszenie i zmiana nazwy"
+- chmod "zmiana bitów uprawnień"
+- chown "zmaina własciciela i grupy"
+- rm "usuwanie pełnych katalogów"
+- grep "filtrowanie wierszy"
+- cut "filtrowanie kolumn"
+- cat "drukowanie zawartości plików"
+- set "edytor strumieniowy"
+- awk "procesor przetrarzania tekstu przez wzorce"
+- wc "word counter"
+- find "wyszukuje pliki , katalogi"
+- head "drukuje pierwszy N wierszy"
+- tail "drukuje ostatni N wierszy"
+
+- # "hash"
+
+- fortune | cowsay | lolcat "piesek"
+- fortune | cowsay -f ghostbusters
+
+DODAWANIE BITÓW
+- chmod u + x skrypt.sh
+- chmod 777 skrypt.sh "daje całkowity dostep do pliku"
+
+URUCHAMIANIE
+- ./skrypt.sh "tworzy powłoke która uruchamia skrypt"
+- source skrypt.sh "uruchamia powłoke która konfiguruje w jednym pliku"
+- .bashrc i .bash_profile "konfiguracja powłoki"
+
+Terminar
+- echo "hello" "wyświetli w nowej lini hello"
+- echo -n "hello" "wyświetni w tej samej lini hello"
+- echo "hello" && echo "world" "wyświetli sie całość"
+
+VIM
+- :q! "wujscie z terminala vim" bez zapisywania zmian
+- :wq "z zapisywaniem zmiań"
