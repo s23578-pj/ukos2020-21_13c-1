@@ -1,0 +1,40 @@
+Zadanie 1
+1)Względna : cd ../../..
+cd /kot/ma/ale
+2)Bezwzględna : cd tmp/ukos/kot/ma/ale
+
+Zadanie 2
+1) mkdir -p tmp/ukos/kot/ma/ale/jan/kowalski
+
+Zadanie 3
+1) cd ../../..
+2) mv kot/ma/ale ala/i
+
+Zadanie 4
+1) alt+f2
+2) xkill
+
+Zadanie 5
+1)ls -a | grep ^al
+
+Zadanie 6
+1)chmod 754 ala (jeśli chodziło Panu o wykonywanie do grupy, bo chyba jest błąd )
+2)chmod a+r,g+rx,o+rwx ala
+
+Zadanie 7
+1)ls -a > nazwa_pliku.txt
+
+Zadanie 8
+1)ktoś włamał się na moje konto oraz zmienił uprawnienia na brak 
+możliwości zapisu
+2)sami przypadkowo odebraliśmy sobie prawo do zapisu -> czyli prawo do tworzenia plików
+
+Zadanie 9
+1) klawisz Tab lub strzałki w górę i na dół
+
+Zadanie 10
+1) uruchomić go w tle : nazwa_programu &
+
+
+
+
