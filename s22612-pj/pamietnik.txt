@@ -1,0 +1,21 @@
+17.10.2020 (01 wstęp do konsoli) tego dnia:
+- uruchamiać terminal,
+- nauczyłem się uzyskać zdalny dostęp do konta na szuflandii,
+- nauczyłem się podstawowej obsługi terminala(poruszanie się po katalogach itp),
+- poznałem podstawowe komendy terminala (między innymi cd, mkdir, rmdir, rm, touch)
+- wykonałem zadania dostępne na szuflandii, a także zadanie dotyczące drzewa katalogów.
+
+07.11.2020 (02 uprawnienia dostępu) tego dnia:
+- utrwaliłem wiedzę z poprzednich zajęć, co pozwala mi obecnie na o wiele szybszą pracę w terminalu,
+- poznałem nowe komendy w terminalu,
+- poznałem opis praw dostępu, gdzie w plikach r(prawo do odczytu), w(prawo do zapisu), x (prawo do wykonywania),
+- natomiast katalogi posiadają r (prawo do odczytu), w(prawo do zmiany zawartości), x(prawo do wejścia w dany katalog),
+- poznałem komendy dotyczące nadawania, a także odbierania praw dostępu(np. chmod 000 plik.txt, chmod u+rwx, go+rx plik.txt, chmod -R 644 plik.txt),
+- poznałem tabelę z interpretacją kodów ósemkowych,
+- wykonałem zadania dotyczące utworzenia struktury podkatalogów i plików tekstowych, aby następnie przydzielić im prawa dostępu,
+- wykonywane zadania znajdują się w moim katalogu domowym,
+- widoczny na szuflandii jest plik strona.html, która posiada odpowiednie prawa dostępu,
+- do następnych ćwiczeń zamierzam przygotować się, poprzez przeczytanie tematu "03 Procesy i strumienie" na szuflandii.
+
+21.11.2020
+Pamiętnik z tego dnia znajduje się w folderze cw3/zajecia3

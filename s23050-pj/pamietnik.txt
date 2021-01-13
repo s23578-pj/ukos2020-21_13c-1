@@ -1,0 +1,18 @@
+Na pierwszych zajeciach nauczylem sie:
+-jak dostac się do konta zdalnego na szuflandii
+-jak dziala terminal
+-czym jest sciezka dostepu
+-pierwsze komendy w terminalu(man, ls, cd, pwd etc.)
+Na drugich zajeciach nauczylem sie:
+-opisu praw dostepu dla poszczegolnych plikow
+-co oznaczaja znaki rwx przy nazwie pliku i co one okreslaja
+-komenda chmod
+-jakie sa grupy przypisane do pliku
+Na trzecich zajeciach nauczelem sie:
+-do czego sluzy polecenie grep
+-wyszukiwania danych procesow poleceniem ps
+-dzieki PID czyli identyfikatorowi procesu moge odwolywac
+sie do danego procesu i dzialac na nim za pomoca polecen
+-polecenia kill
+-dwóch skrótów klawiszowych ctrl+c i ctrl+z i ich dzialanie
+-polecenia bg i fg, czyli działanie na procesach

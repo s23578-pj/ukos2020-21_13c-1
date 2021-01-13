@@ -1,0 +1,28 @@
+21.11.2020
+----------
+
+Zajecia wprowadzajace do obslugi strumienia wejscia/wyjscia w bashu
+Wazne:
+ > strumien wyjscia jest przekazywany do pliku (nadpisywanie) echo "Test" > plik.txt 
+ >> j/w tylko DOpisywanie echo "Test" >> plik.txt
+ 2> strumien bledow jest przekazywany do pliku (nadpisywanie) - to co jest zglaszane za pomocna stderr
+ 2>> j/w tylko DOpisywanie
+
+Pipeline:
+ A | B    bierze strumien wyjscia z A jako strumien wejscia do B   np. ps aux | grep notepad - wylistuje liste procesow oraz ograniczy wyswietlany wynik do wierszy ze slowem `notepad`
+ A < B    wrzytuje plik B jako wejscie do programu A
+
+
+Procesy:
+ ps - wskazuje na liste procesow
+ PID - identyfikator procesu (widoczny podczas wpisywania ps), dzieki niemu mozna wysylac sygnal SIGKILL w celu ubicia procesu (kill <pid>)
+
+
+Skróty klawiszowe:
+ Ctrl-C - Zabija obecnie chodzący proces w terminalu (na przyklad wychodzi z uzywania programu `cat`)
+ CTRL-Z - Zawiesza process i wysyla go do backgroundu. Jezeli chce do niego powrocic musze wpisac `fg process_name`
+ CTRL-D - Zamyka powłokę z sygnałem EOF(End of File)
+
+Przydatne narzedzia:
+ tar - pakowanie i rozpakowywanie plikow
+ wget - pobieranie strony / plikow z internetu

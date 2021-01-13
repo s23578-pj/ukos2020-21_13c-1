@@ -1,0 +1,8 @@
+18.10.2020 - Pierwsze zajęcia.
+
+07.11.2020 - Uprawnienia dostępu
+ * Nadawanie uprawnień dla pliku/folderu za pomocą komendy chmod
+ * Sposoby nadawania:
+   ** `chmod u=x, g=r, o=w <plik>` - u(user), g(group), o(others) / PRZYPISANIE uprawnień (od zera)
+   ** `chmod u+x, g+r, o+w <plik>` / DODANIE uprawnień (od zera)
+   ** `chmod 750 <plik>` / PRZYPISANIE uprawnień (od zera) za pomocą bitów (7 (111) bitów dla użytkownika, 5(101) bitów dla grupy, 0(000) bitów dla reszty

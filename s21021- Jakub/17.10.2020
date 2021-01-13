@@ -1,0 +1,52 @@
+"w linuxie wszystko jest plikiem"
+BUSH - Bourne Another Shell
+
+
+GIT:
+- git clone "pobiera repo"
+- git status - "przedstawia stan naszego repo."
+- git log - "historia commitow"
+- git branch - "wyświetli nam liste branchy w lokalnym repo."
+- git push - "wypycha commity"
+- git reset --hard "przywraca poprzedniego brancha"
+- git fetch "zaczytuje stan zewnetrznego repo "
+- git pull "zaciaga wszystkie commity"
+- git remote -vv "sprawdzanie na jaki server sie wysyła"
+GIT ADD:
+- git add . "dodaje wybrane pliki"
+- git add --all - "dodaje wszystko"
+
+GIT COMMIT:
+- git commit -m
+- git commit -am
+
+GTI CHECKOUT:
+- git checkout inny_brach
+- git checkout -b "nowy_branch"
+- git checkout -
+- git checkout nazwa_pliku
+
+GIT
+- w linux dajemy "cd/.." zeby dojść do odpowiedniego katalogu a w windows "\" z czego to jest znak specjalny który rodzi pewne problemy bo w programowaniu używany "\\" np
+- echo -e "a\nb"
+- echo -e "a\\nb"
+- cd/... zeby dojść do katlogu
+- c:\user\nazwa_pliku
+- sudo su "logowanie jako admin"
+- history "pokazuje wszystkie historie poleceń"
+- cd "wyjscie z pliku"
+- pwd "wyświetlenie aktualnego katalogu"
+- ls "wyświetlenie zawartośći katalogu"
+- tree "wyświetlenie list pików i katalogów (drzewo)"nie zawsze działa
+
+
+KATALOGI
+- bin znaczna wiekszość polecen np. "ls , echo"
+- boot uruchamianie systemu . np jondro systemowe  , - jondro "podstawowe funkcje systemowe"
+- dev katalog ze wszystkimi urzadzeniami
+
+KLAWISZ
+- shift + insert "wkleja sie polecenie skopiowane"
+- ctrl + z "zatrzymuje programy"
+- tab "zapełnia wpisywanie"
+

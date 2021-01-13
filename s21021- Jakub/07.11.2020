@@ -1,0 +1,36 @@
+CHMOD
+- chmod u+x nazwa_pliku "dodajemy uprawnienia 'x'"
+- chmod u-x zanwa-pliku "zabieramy uprawnienia 'x'"
+- chmod u=rwx nazwa_pliku "przyiswanie wszustkich 3 bitów 'rwx'"
+- chmod u=r nazwa_pliku "bedzie sam bit odczytu"
+- chmod u=- nazwa pliku "czyści wszystkie 3 bity"
+- chmod u+r , g-wx , o-rwx nazwa_pliku "przydzielić ustaienia do wszytkich (u - właściciel ,g - grupy , o - inni )"
+- chmod 777 nazwa_pliku "odczyt 9 bitów"
+- chmod 755 nazwa_pliku "ucinamy "
+- chmod u=... , g=... , o=... "zapisywanie wszystkich kitów"
+- chmod 755 "domyśle ustawienia dla kalogów"
+- chmod 644 "domyślne usienia dla plików"
+- chmod ugo=rwx "uprawnienia dla wszystkich"
+
+- umask 022"odwrotność uprawńeń 022""777 - 022 = 755 katalogi"
+- umask 022"odwrotność uprawńeń 022""666 - 022 = 644 pliki"
+- umask 000"ustawienie wszystkich bitów odwrotnie co 777"
+
+Jeśli chodzi o pliki:
+- r prawo do odczytu
+- w prawo do zapisu
+- x prawo do wykonywania
+
+W przypadku katalogów
+- r prawo do zapoznania się z zawartościć katalogu
+- w prawo do zmiany zawartości katalogu
+- x prawo do "wejścia" do danego katalogu
+
+- u właściciel (user)
+- g grupa (group)
+- o inni (other)
+  (u) (g) (o)
+d rwx rwx rwx
+
+Katalogi
+- mkdir "nowy katalog"

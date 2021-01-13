@@ -1,0 +1,10 @@
+03.11.2020
+Temat: Linux - wstęp do konsoli
+Nauczyłem się:
+- przechodzenia między katalogami
+- używania ścieżki względnej i bezwzględnej do folderów
+- tworzenia folderów
+- tworzenia plików
+- usuwania folderów
+- usuwania plików
+- wyświetlania zawartości folderu

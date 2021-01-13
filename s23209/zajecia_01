@@ -1,0 +1,27 @@
+-> Wyświetlenie katalogu umożliwia nam polecenie ls (można używać z różnymi parametrami)
+	-> ls -a  - pokazuję również ukryte pliki
+	-> ls -l - robi nam listę i pokazuję uprawnienia
+	-> ls -s - sortuje pliki od największych do najmniejszych pod względem wielkości
+	Oczywiście jest ich więcej ale te wydają mi się na tą chwile najbardziej przydatne.
+	Co więcej można łączyć parametry! 
+
+-> sprawdzenie swojej aktualnej pozycji można za pomocą polecenia - pwd
+	Wpisanie polecenia skutkuje wyświetlenie nam całej ścieżki do miejsca gdzie jesteśmy aktuanie
+	
+	W interfejsie graficznym wyświetla nam się u góry (na pasku) cała ścieżka w moim aktualnym przypadku /home/ubuntu
+
+-> Opisując ścieżkę względną i bezwzględną w skrócie:
+	- bezwględna - jest podawana od korzenia
+	- względna - podawana względem naszego położenia
+
+-> W terminalu możemy wyświetlić zawartość katalogu domowego, nie będąc w nim. 
+	- ls ~
+	- ls /home/ubuntu
+
+-> Próbując przejść do katalogu root otrzymamy raport - Permissin Denied.
+	- W końcu jesteśmy zwykłym użytkownikiem i nie możemy zobaczyć co znajduje się w root'cie
+
+-> Wciskając kombinacje klawiszy Ctrl+Alt+F1/F2/F3/F4/F5/F6 możemy wyjść z trybu graficznego do tekstowego
+	-Aby wyjść wciskamy Ctrl+Alt+F7
+
+-> Ścieżka ././././././ pozwoli nam przejść do folderu głównego  

@@ -1,0 +1,14 @@
+Zajęcia 1
+Nauczyłam się obsługi terminala podstawowymi komendami, cd, ls, pwd.
+ 
+Zajęcia 2
+Nauczyłam się działać na uprawnieniach do katalogów innych jak i swoich 
+oraz je zmieniać.
+
+Zajęcia 3 
+Nauczyłam się wyszukiwania i operowania na procesach w cmd oraz 
+odpalania programów w tle, przerzucania ich na pierwszy plan i
+tworzenia plików tekstowych i zamykania ich z zapisem oraz bez.
+
+Zajęcia 4
+Powtórzyłam cały dotychczasowy materiał :)

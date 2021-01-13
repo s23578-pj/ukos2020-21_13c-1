@@ -1,0 +1,32 @@
+- less nazwa_pliku "wyświetlanie"
+- ls -l / > nazwa_pliku "nadpisywanie zawartości"
+- echo "ala ma kota" > stdout "nadpisywanie "
+- echo "ala ma wp...ol">> nazwa_pliku "dopisanie do nadpisywania"
+- ls -l / > /dev/null "przekierowania"
+- cat / 2> /dev/null "przekierowanie standardowego wyjscia błedu" "katalog"
+- cat / 2> nazwa_pliku "przekierowanie standardowego wyjscia błedu do pliku"
+- ls -l / > nazwa_pliku 2> nazwa_pliku  "żeby przekierować dwa strumienie jednocześnie"
+- 1. ls -l / > "przekierowanie na standardowe wyjście" 2. std_all 2>&1 "standardowe wyjście błedu na standardowe wyjscie"
+  ls -l / > std_all 2>&1
+- cat / > std_all 2>&1 "dwa strumienie jednocześnie"
+
+- cat < nazwa_pliku "przekierowanie na standardowe wejscie"
+
+- ls -l / | grep nazwa_katalogu"drukowanie zawartości jakiegoś katalogu"
+- ls -l / | grep nazwa_katalogu | cut - ' ' -f 1-...  "filtrowanie kolumn "
+- ls -l / | grep nazwa_katalogu | wak '{print $liczba}'
+
+- mv ./* nazwa_pliku "nie można przenieść katalodu do jego wnętrza"
+- tar -cf pliki.tar pliki/ "stworzenie katalogu .tar który zawiera wszystkie elementy z poprzednimi plikami"
+- tar -cvf pliki.tar pliki/ "pokazuje jakie konkretnie pliki pamuje do katalogu"
+- tar -cvzf pliki.tar.gz pliki/ "pakuje pliki szybciej" zajmuje to tylko 271 bitów a bez kompresji zajmuje to 10240 bitów
+- tar -cvjf pliki.tar.bz2 pliki/ "bz2 archiwa bedą sie pakowały dłużej ale bedą mniej zajmowały niz gz"
+
+pakowanie bin :
+- tar -cvzf bin.tar.gz /bin/  "plik wiecej waży ale szybciej sie pakuje"
+- tar -cvjf bin.tar.bz2 /bin/ "plik mniej waży ale wolniej sie pakuje"
+
+sciąganie
+- wget www... "pobiera strone internetowa"
+- curl -k https:... > index.html "przekierowanie do pliku zawartości strony"
+- -k "wyłącza sprawdzanie certyfikatu"

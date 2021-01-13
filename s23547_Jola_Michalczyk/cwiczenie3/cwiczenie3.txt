@@ -1,0 +1,38 @@
+Zadanie 0
+1)ls -a :wyświetla listę plików
+2)ls -a | grep D :wyświetla listę pliów zawierających w nazwie literkę "D" 
+3)ls -a | grep D > ListaPlikówZLiterkąD.txt :mimo że nie było nazw plików z literką "D", to plik
+został utworzony, z tym, że pusty. "|" oznacza AND, czyli łączenie 2 komend. 
+">" oznacza przekierowanie wyszukanej zawartości do pliku + stworzył plik
+
+Zadanie 1
+1)ps :wyświetla listę procesów aktualnie uruchomionych w systemie
+2)ps -a :wyświetla wszystkie procesy oprócz głównych programów odpalonych w
+cmd -> w tym przypadku nie wyświetla ssh
+3)ps x :wyświetla wszystkie procesy, których właścicielem jest bieżący użytkownik
+4)ps aux : a-pokazuje procesy wszystkich użytkowników,u-pokazuje procesy użytkownika/właściciela,
+x-pokazuje procesy, które nie są przypisane do terminala
+5)ps -e
+6)ps -U root -u root u
+
+Zadanie 2
+1)uruchamiam program gedit
+2)ps -e | grep gedit (można też użyć tasklist)
+3)kill "numer PID" :notatnik się wyłączy
+4)nie znaleziono procesu
+5)nie działa dla dowolnego procesu
+
+Zadanie 3
+1)cat tworzy plik tekstowy i wchodzi do niego
+2)wyjdzie mi z pliku tekstowego
+3)tekst nie zapisał się
+4)tekst się zapisał
+
+Zadanie 4
+1)otwiera program
+2)wychodzi z programu
+3)nie można pisać
+4)po bg można pisać
+5)po fg można znowu wpisywać, ale termianl jest zablokowany (trzeba zamknąć program
+by pisać w terminalu)
+6)uruchomiły się wszystkie programy, które możemy wykonać w tle

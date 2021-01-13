@@ -1,0 +1,50 @@
+1.
+
+a) cd ../../..
+   cd /kot/ma/ale
+b) cd /tmp/ukos/kot/ma/ale
+
+2.
+
+mkdir -p /tmp/ukos/kot/ma/ale/jan/kowalski
+
+3.
+
+cd ../../..
+mv kot/ma/ale ala/i
+
+4.
+
+alt+F2
+xkill i klikam program który chce zabić >:)
+
+5.
+
+ls | grep ^al
+
+6. 
+
+chmod 754 ala
+chmod a+r,g+rx,o+rwx ala
+
+7.
+
+ls -a > nazwy_plikow.txt
+
+8.
+
+a)ktoś włamał się na moje konto oraz zmienił uprawnienia na brak 
+możliwości zapisu
+b)sami przypadkowo odebraliśmy sobie prawo do zapisu -> czyli prawo do tworzenia plików
+
+9.
+
+tabulatorem lub strzałkami góra dół
+
+10.
+
+urochomienie w tle: nazwa_programu &
+
+
+
+

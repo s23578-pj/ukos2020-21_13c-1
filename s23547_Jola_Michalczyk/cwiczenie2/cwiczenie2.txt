@@ -1,0 +1,15 @@
+1. Mam dostęp do plików, jeśli uprawnienia
+mi na to pozwalają. Na poczatku nie mogłam zrobić pliku
+u kolegi, ale po zmianie uprawnień katalogu miałam
+taką możliwość, przy próbie usunięcia pliku w moim
+folderze - udało się
+
+2. Mogę usunąć uprawnienia katalogu bieżącego i nadrzędnego
+podając ścieżkę po użyciu komendy chmod, mając uprawnienia
+w bieżacym katalogu, nie mogę przejść wyżej do nadrzędnego,
+w którym nie mam uprawnień i na odwrót
+
+3. Można się komunikować, >> dopisuje/dodaje tekst
+a > nadpisuje
+
+4. Nie działa
