@@ -1,0 +1,4 @@
+Utworzyłem plik program.c
+Słowo kluczowe jak #include czy for podswietla się na żółty/fioletowy kolor
+Dodatkowo otwierając program robi sam odpowiednie wcięcia w tekście.
+diff jako polecenie porównuje dwa pliki.

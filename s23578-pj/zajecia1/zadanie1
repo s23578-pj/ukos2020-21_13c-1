@@ -1,0 +1,35 @@
+1. Uruchom  terminal.
+przez ctrl+alt+t
+terminal z menu: menu -> System Tools -> LXTerminal
+2. Wyświetl zawartość aktualnego katalogu.
+odp. ls
+3. Sprawdź gdzie aktualnie się znajdujesz.
+odp. pwd
+4. Przejdź do katalogu Pulpit za pomocą ścieżki względnej.
+odp. cd ../../../Desktop/
+5.  Gdzie jesteś?
+odp: pwd
+miejsce: /home/ubuntu/Desktop
+6. Wyświetl zawartość bieżącego katalogu
+odp. ls
+wynik: adding-packages-permanently-info.txt pamietnik.txt ukos
+7. Zobacz, czy przechodząc do tego katalogu w sposób graficzny otrzymasz to samo.
+odp. Tak
+8. Wyświetl zawartość swojego katalogu domowego bez pzechodzenia do niego.
+odp. ls ~/
+9. przejdź do katalogu obrazy w twoim katalogu domowym za pomocą ścieżki względnej,
+odp. cd ../Pictures/
+10.  Sprawdź gdzie jesteś
+odp: pwd
+wynik: /home/ubuntu/Pictures
+11. Zobacz do jakiego katalogu przejdziesz za pomocą ścieżki ./././././
+odp. do tego, w którym się znajduje.
+12.  przejdź do swojego katalogu domowego za pomocą ścieżki bezwzględnej.
+odp. cd /home/
+13. Co się stanie po wpisaniu cd/root Zastanów się co się stało
+odp. otrzymałem komunikat: "permision denied" do katalogu root uprawnienia ma użytkownik root
+Mogę wejśc do katalogu ale z przedrostkiem "sudo"
+14.  Co stanie się jeśli wcisnę ctrl+alt+f1
+odp. pojawia się konsola.
+
+

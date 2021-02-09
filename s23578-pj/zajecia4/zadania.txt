@@ -1,0 +1,23 @@
+1.
+ścieżka relatywna: cd../../
+bezwzględna: cd /tmp/ukos/ala/
+2
+mkdir -p ./pawel/kowal
+3.
+mv /tmp/ukos/kot/ma/ale ./
+4.
+PID, lista wygenerować komendą ps i zamknąć za pomocą komendy kill (PID)
+5.
+ls -d al*
+chmod ala 777
+chmod ala 004
+chmod ala 700
+6
+ls > lista_plikow.txt
+7.
+ls > Lista_plikow.txt
+8.
+ktoś zmienił prawa dostępu do pliku
+to ja zmieniłem prawa dostępu do pliku.
+9. TAB przyspiesza wpisywanie komend (dopasowuje koncowki)
+10. na końcu polecenia znak "&" bądź cltr+Z

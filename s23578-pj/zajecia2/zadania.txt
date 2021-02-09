@@ -1,0 +1,25 @@
+I
+1. po komendzie ls -l zostało wypisanych 10 katalogów i 3 pliki
+2. po komendzie ls - a | grep D zostały wpisane wszystkie foldery/pliki spełniające filtr grep.
+3. po komendzie ls - a | grep D > ListaPlikowZLiterkaD.txt do pliku .. zostały zapisane wszystkie foldery i pliki spelniajace warunki grep.
+II.
+ps aux
+ps aux grep | root
+ps -U root
+III.
+ps -u ubuntu
+kill 25331
+killall shell - przerwanie działania wszystkich terminali
+kill zadziała tylko dla procesów, do których ma się uprawnienia (dostęp).
+IV.
+po komendzie cat i wciśnięciu cltr+C proces wywołania zostaje przerwany
+
+Po utworzeniu pliku wynik1.txt, użyciu polecenia cat wpisaniu słowa wita.
+ctrl+c zamyka proces a plik pozostaje pusty
+ctrl+d zamyka proces a do pliku zostaje zapisane słowo witaj
+ V
+ctrl+Z - przenosi proces do działania w tle.
+bg - przywraca proces do działania
+fg - nadanie priorytetu zadaniu
+nazwa_pliku & - odtworzenie procesu w tle
+jobs- podgląd procesów działających w tle (PID)
