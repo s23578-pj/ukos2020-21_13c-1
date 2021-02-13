@@ -1,0 +1,70 @@
+Zaczynając przygodę z Powershellem zacząłem od odpalenia PowerShella ISE jako Administrator następnie zgodnie ze wzkazówkami podążałem kolejno:
+1. Set-ExecutionPolicy Bypass, która pozwala na korzystanie z obszerniejszej zawartości komend.
+2. Postanowiłem wyświetlić pomoc więc wpisałem: Get-ExecutionPolicy, w której otrzymałem informacje na temat definicji, opis, nazwa, składnia, powiązane linki, remarki.
+3.  Po dołączeniu -Examples została wydrukowana lista 3 przykładów użycia:
+	1. Get all execution policies -  (-list) komander używa listy parametrów do wyświetlenia każdego zakresu Execution policy.
+	2. Set an execution policy. 
+	3. Get the effective execution policy.
+4. Get-Module -ListAvailable - zwraca dostępne w danej chwili moduły.
+5. Get-Module -ListAvailable | ? {$_Version -ge "2.0.0.0"} otrzymałem to co było opisane w pliku ps-info. Mianowicie została wyświetlona lista wszystkich modułów w wersji równej bądź większej 2.0.0.0.
+Chcąc sprawdzić jakim sposobem wyszukać moduły powyżej 2.0.0.0 wykorzystałem opcji -gt.
+6. Get-Module -ListAvailable | ? {$_Version -ge "2.0.0.0"} | % {Get-Command -Module $_.Name} - Ta komenda wyświetliła wszystkie polecenia (cmdlet) w dostępnych modułach w wersji >= 2.0.0.0
+7.  Get-Module -ListAvailable | ? {$_Version -ge "2.0.0.0"} | % {Get-Command -Module $_.Name} | ? {($_.Name -like "Add-*") -or ($_.Name -like "Get-*)} - wyświetlenie tych które mają w nazwie "Add-" lub "Get-"
+8. Get-Module -ListAvailable | ? {$_Version -ge "2.0.0.0"} | % {Get-Command -Module $_.Name} | ? {($_.Name -like "Add-*") -or ($_.Name -like "Get-*)} | Out-GridView - pozwala na graficzne przedstawienie wyniku.
+9. Możemy również wypisać te dane do pliku, czyli: $nazwaPliku = "mojaNazwaPliku.txt" a dalej Get-Module -ListAvailable | ? {$_Version -ge "2.0.0.0"} | % {Get-Command -Module $_.Name} | ? {($_.Name -like "Add-*") -or ($_.Name -like "Get-*)} | Out-File $env:TEMP\$nazwaPliku
+
+Jeżeli chcemy aby nic z tym nie robić aby tylko przetworzyło bez wypisania to:
+10. Get-Module -ListAvailable | ? {$_Version -ge "2.0.0.0"} | % {Get-Command -Module $_.Name} | ? {($_.Name -like "Add-*") -or ($_.Name -like "Get-*)} | Out-Null
+
+To tyle z list. Pora na załadowanie pierwszego modułu! Niech będzie to BitsTransfer
+11. Import-Module BitsTransfer - zarządza przesyłaniem danych w tle. ~/ zamiennie można użyć ipmo BitsTransfer (ten sam rezultat)
+12. Get-Command -Module BitsTransfer (wylistowanie wszystkich komend tego modułu)
+13.  Pominąłem polecenie $cred = Get-Credential - uznałem, że jako nie pracujemy stacjonarnie w budynku postanowiłem pominąć.
+14. Połączyłem się z szuflandią i wykonałem instalację Obrazu maszyny wirtualnej Javy: Start-BitsTransfer -Source, [link_szuflandii] -Destination C:\ -Credential [dane_logowanie] -Authentication Negotiate. (trwało około 3min). - W tym czasie nie mogłem nic robić w konsoli.
+
+Aby temu zapobiec w spróbowałem sposobu asynchronicznego.
+15. BitsTransfer -Source, [link_szuflandii] -Destination C:\ -Credential [dane_logowanie] -Authentication Negotiate -Asynchronous -DisplayName "Moj Bits Transfer".
+16. Get-BitsTransfer - komenda służy za ukazanie stanu transferu pobierania.
+By zakończyć job transferu:
+17. Complete-BitsTransfer -BitsJob $job 
+18. Nic nie szkodzi na przeszkodze mierzenia czasu wykonywania jakiegoś polecenia. Dzięki komendzie Measure-Command jest to możliwe.
+np: Measure-Command {Get_ChildItem -Path C:\Windows}
+19. Get-Alias } ? ($_.Definition -like "Get-ChildItem"} - znajome skróty (dir,ls)
+20. ls C"\ | %{Sleep -Milliseconds 250; return $_} | Format-Table - wylistowałem pliki i katalogi w odstępie czasowym. Bardzo fajna opcja :D
+21. Za pomocą PS można także odpalać programy jak i w cmd. Bo to też jest konsola!
+Odpaliłem więc notatnik: & C:\Windows\notepad.exe
+
+Listowałem moduły i komendy. Pora abym wylistował coś "normalnego" - aplikacje/programy.
+Można to wykonać na dwa sposoby: 1. Rejestr 2. WMI
+W Rejestrze informacje o aplikacjach są przechowane w HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+Można sprawdzić jakie dyski mamy w komputerze za pomocą PowerShella.
+22. Get-PSDrive. Tutaj też mamy dwa odpowiadające za rejestr (HKCU, HKLM)
+
+Aby wejść do rejestru:
+23. cd hklm:\
+i normalnie przeglądać go Jednak powoduje to wyświetlenie ogromnej ilości tekstu w brzydkiej postaci. polepszmy to
+24. ls | %{Get-ItemProperty $_.pspath | Select-Object DisplayName, InstallDate, UninstallString | Format-Table - AutoSize}
+
+odinstalować można korzystając z operatora "&" tak jak z notatnikiem. z tą różnicą, że..
+Nie testowałem tej komendy ze względów ochrony przed utratą aplikacji.
+oto komenda:
+25. sl | %{Get_ItemProperty $_.pspath | Select-Object DisplayName, InstallDate, UninstallString}
+
+2. WMI - dzięki niemu możemy zarządzać systemem i wyciągać ciekawe rzeczy.
+
+26. Get_WmiObject -Class Win32_Product | Format-Table -AutoSize
+
+Komenda na znalezienie wszystkich pakietów Microsoftu:
+
+27. Get-WmiObject -Class Win32_Product | ?{$_>Vendor.toLower() -like "*microsoft*"} | Select-Object Name, Vendor | Format-Table -AutoSize
+
+Alias - Lista wszystkich zdefiniowanych aliastów w  bieżącej sesji jak: ?, ls, dir, %
+Cert - Magazyn certyfikatów TLS/SSL
+Env - zmienne środowiskowe w bierzącej sesji.
+Można też normalnie doinstalować dyski:
+GH - GitHub
+AD -ActiveDirectory
+
+? - skrót Where-Object
+% - skrót While-Object
+PS - Odkryłem, że to nie służy tylko do pisania skryptów a konsola w której można odpalać różne programy. (dzięki "call")

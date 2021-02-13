@@ -76,3 +76,32 @@ przerabiając materiał ze zjazdu 3 poznałem:
 - różnice między Ctrl+C a Ctrl+D (zakończenie procesu a wstrzymanie (zakończenie strumienia)
 - znak zapytania "?" oznacza nie przypisanie konkretnego procesu do konkretnej powłoki/terminala (TTY)
 - użycie bg (przełączenie programu w tle) /fg (powrócenie, wznowienie procesu)
+
+13.02.2021
+
+Przerabiając materiał ze zjazdu 7 oraz 8 poznałem.
+Program PowerShell oraz PowerShell ISE
+Zaznajomiłem się ze strukturą pisania komend wraz z funkcjami i aliasami.
+główne aliasy to:
+? - skrót Where-Object
+% - skrót While-Object
+Dzięki PS mogę podobnie jak w konsoli pracować na plikach.
+PS używa poleceń cmdlet - samodzielne obiekty programistyczne.
+Oraz:
+poznałem:
+- komendę Set-ExecutionPolicy Bypass, dzięki której mogę korzystać z obszerniejszej zawartości komend i ogólnego dostępu do powłoki.
+- Wyświetlać moduły,
+- Filtrować komendy za pomocą aliasów oddzielonych potokami "|"
+- Listowania oraz wypisywania wyników do pliku.
+- Pobierania zawartości dzięki zainstalowanemu modułowi BitsTransfer.
+- Mierzenia czasu wykonywania jakiegoś polecenia, dzięki komendzie Measure-Command.
+- Przeglądanie Rejestru oraz sprawdzenie dysków i ich informacji. Get-PSDrive.
+
+Alias - Lista wszystkich zdefiniowanych aliastów w  bieżącej sesji jak: ?, ls, dir, %
+Cert - Magazyn certyfikatów TLS/SSL
+Env - zmienne środowiskowe w bierzącej sesji.
+Można też normalnie doinstalować dyski:
+GH - GitHub
+AD -ActiveDirectory
+
+W trakcie wykonywania poleceń odkryłem, że PS nie służy tylko do pisania skryptów ale to również konsola w której można odpalać różne programy. (dzięki "call")
